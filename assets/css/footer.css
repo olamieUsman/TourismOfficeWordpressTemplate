@@ -1,0 +1,158 @@
+/* Base Mobile Styles */
+.footer {
+    background-color: #f8f9fa;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.footer__container {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.footer__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer__section {
+    margin-bottom: 1rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.footer__heading {
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
+    color: #333;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}
+
+.footer__text {
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.footer__link {
+    color: #007bff;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    min-height: 44px;
+    display: inline-block;
+    transition: color 0.2s ease;
+}
+
+.footer__link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.footer__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__list-item {
+    margin-bottom: 0.5rem;
+}
+
+.footer__bottom {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid #dee2e6;
+    color: #666;
+    font-size: clamp(0.8rem, 1.2vw, 0.9rem);
+}
+
+/* Tablet Breakpoint (600px and above) */
+@media (min-width: 600px) {
+    .footer {
+        padding: 2.5rem 0;
+    }
+
+    .footer__content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .footer__section {
+        padding: 1.25rem;
+    }
+}
+
+/* Desktop Breakpoint (900px and above) */
+@media (min-width: 900px) {
+    .footer {
+        padding: 3rem 0;
+        margin-top: 3rem;
+    }
+
+    .footer__container {
+        max-width: 1200px;
+        padding: 0 2rem;
+    }
+
+    .footer__content {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer__section {
+        padding: 1.5rem;
+    }
+}
+
+/* Large Desktop Breakpoint (1200px and above) */
+@media (min-width: 1200px) {
+    .footer__container {
+        padding: 0;
+    }
+
+    .footer__content {
+        gap: 3rem;
+    }
+}
+
+/* Visitor Information in Accommodation Sidebar */
+.visitor-info {
+    margin-top: 1rem;
+}
+
+.visitor-info__text {
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.visitor-info__strong {
+    color: #333;
+    font-weight: 600;
+}
+
+/* Performance Optimization */
+@media (prefers-reduced-motion: reduce) {
+    .footer__link {
+        transition: none;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .footer {
+        background-color: #fff;
+        border-top: 1px solid #000;
+    }
+
+    .footer__link {
+        text-decoration: underline;
+        color: #000;
+    }
+} 

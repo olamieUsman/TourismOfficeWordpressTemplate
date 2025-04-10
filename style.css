@@ -1,0 +1,133 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Reset & Global
+2.0 Hero Section
+3.0 Section Layouts
+4.0 Cards
+5.0 Buttons
+6.0 Footer
+--------------------------------------------------------------*/
+
+/* 1.0 Reset & Global */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+  a {
+    color: #003366;
+    text-decoration: none;
+  }
+  
+  /* 2.0 Hero Section */
+  .hero {
+    background: #eef4f8;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  .hero__content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .hero__link {
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  /* 3.0 Section Layouts */
+  section {
+    padding: 3rem 2rem;
+  }
+  .section__header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .card__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  /* 4.0 Cards */
+  .card {
+    border: 1px solid #ccc;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 8px;
+  }
+  .card h3 {
+    margin-top: 0;
+  }
+  
+  /* 5.0 Buttons */
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: #003366;
+    color: #fff;
+    border-radius: 5px;
+  }
+  .btn--cta {
+    background: #005599;
+  }
+  
+  /* 6.0 Footer */
+  footer {
+    background: #222;
+    color: #eee;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  /* Filter Section Styles */
+  .filter-section {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  
+  .filter-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .filter-button {
+    padding: 0.5rem 1.5rem;
+    background-color: #f5f5f5;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .filter-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .filter-button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  
+  /* Listing Card Transitions */
+  .listing-card {
+    transition: all 0.3s ease;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .listing-card.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    display: none;
+  }
+  

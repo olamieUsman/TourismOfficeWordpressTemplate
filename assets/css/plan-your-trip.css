@@ -1,0 +1,218 @@
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.hero__content {
+    max-width: 800px;
+    margin-bottom: 2rem;
+}
+
+.hero__title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.hero__subtitle {
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    color: #666;
+    line-height: 1.5;
+}
+
+.hero__image {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero__img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Trip Planning Tools */
+.trip-tools {
+    padding: 4rem 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    color: #333;
+    margin-bottom: 3rem;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.tool-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+}
+
+.tool-card__icon {
+    margin-bottom: 1.5rem;
+}
+
+.tool-card__icon img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.tool-card__title {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.tool-card__description {
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Seasonal Guide */
+.seasonal-guide {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.seasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.season-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.season-card__title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.season-card__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.season-card__list li {
+    color: #666;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.season-card__list li:last-child {
+    border-bottom: none;
+}
+
+/* Travel Tips */
+.travel-tips {
+    padding: 4rem 0;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.tip-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tip-card__title {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.tip-card__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tip-card__list li {
+    color: #666;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.tip-card__list li:last-child {
+    border-bottom: none;
+}
+
+/* Call to Action */
+.cta-section {
+    text-align: center;
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.cta-section__title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.cta-section__text {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        padding: 3rem 0;
+    }
+
+    .tools-grid,
+    .seasons-grid,
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tool-card,
+    .season-card,
+    .tip-card {
+        padding: 1.5rem;
+    }
+}
+
+/* Performance Optimization */
+@media (prefers-reduced-motion: reduce) {
+    .tool-card {
+        transition: none;
+    }
+} 
